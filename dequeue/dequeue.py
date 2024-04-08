@@ -8,7 +8,7 @@ class ParentQueue(ABC):
     _data: list[Any]
 
     @abstractmethod
-    def __init__(self) -> None:
+def __init__(self) -> None:
         super().__init__()
         self._data = []
         self.__pop_front_status = self.PopFrontStatus.NIL
